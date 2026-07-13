@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe | Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-white">
+
+    <!-- Navbar -->
+    <header class="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 z-50">
+        <nav class="max-w-6xl mx-auto flex justify-between items-center p-5">
+
+            <h1 class="text-2xl font-bold text-cyan-400">
+                John Doe
+            </h1>
+
+            <ul class="flex gap-8 text-slate-300">
+                <li><a href="#home" class="hover:text-cyan-400 transition">Home</a></li>
+                <li><a href="#about" class="hover:text-cyan-400 transition">About</a></li>
+                <li><a href="#skills" class="hover:text-cyan-400 transition">Skills</a></li>
+                <li><a href="#projects" class="hover:text-cyan-400 transition">Projects</a></li>
+                <li><a href="#contact" class="hover:text-cyan-400 transition">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="min-h-screen flex items-center justify-center text-center px-6 bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950">
+
+        <div>
+
+            <p class="text-cyan-400 uppercase tracking-[0.3em] mb-3">
+                Welcome
+            </p>
+
+            <h1 class="text-6xl font-extrabold mb-4">
+                Hi, I'm
+                <span class="text-cyan-400">
+                    John Doe
+                </span>
+            </h1>
+
+            <p class="text-xl text-slate-300 max-w-2xl mx-auto">
+                A frontend developer passionate about building modern,
+                responsive, and user-friendly websites.
+            </p>
+
+            <a href="#projects"
+               class="inline-block mt-10 px-8 py-3 rounded-full bg-cyan-500 hover:bg-cyan-400 transition font-semibold">
+                View My Work
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-5xl mx-auto py-24 px-6">
+
+        <h2 class="text-4xl font-bold text-center mb-10">
+            About Me
+        </h2>
+
+        <div class="bg-slate-900 rounded-2xl p-8 border border-slate-800 shadow-xl">
+
+            <p class="text-slate-300 leading-8 text-lg">
+                John Doe is a creative web developer with experience in
+                designing responsive websites and intuitive user interfaces.
+                He enjoys learning new technologies and building projects that
+                combine functionality with beautiful design.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="max-w-6xl mx-auto py-24 px-6">
+
+        <h2 class="text-4xl font-bold text-center mb-12">
+            Skills
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+            <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:-translate-y-2 hover:border-cyan-400 transition">
+                <h3 class="text-xl font-semibold mb-3">Frontend</h3>
+                <p class="text-slate-400">
+                    HTML, CSS, Tailwind CSS, JavaScript
+                </p>
+            </div>
+
+            <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:-translate-y-2 hover:border-cyan-400 transition">
+                <h3 class="text-xl font-semibold mb-3">Tools</h3>
+                <p class="text-slate-400">
+                    Git, GitHub, VS Code, Figma
+                </p>
+            </div>
+
+            <div class="bg-slate-900 rounded-xl p-6 border border-slate-800 hover:-translate-y-2 hover:border-cyan-400 transition">
+                <h3 class="text-xl font-semibold mb-3">Learning</h3>
+                <p class="text-slate-400">
+                    React, Node.js, UI/UX Design
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="max-w-6xl mx-auto py-24 px-6">
+
+        <h2 class="text-4xl font-bold text-center mb-12">
+            Projects
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:scale-105 transition">
+
+                <img
+                src="https://picsum.photos/400/250?1"
+                class="w-full h-52 object-cover">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">
+                        Landing Page
+                    </h3>
+
+                    <p class="text-slate-400">
+                        Responsive website for a fictional startup.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:scale-105 transition">
+
+                <img
+                src="https://picsum.photos/400/250?2"
+                class="w-full h-52 object-cover">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">
+                        Weather App
+                    </h3>
+
+                    <p class="text-slate-400">
+                        Weather application using an external API.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:scale-105 transition">
+
+                <img
+                src="https://picsum.photos/400/250?3"
+                class="w-full h-52 object-cover">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">
+                        Task Manager
+                    </h3>
+
+                    <p class="text-slate-400">
+                        Productivity application for organizing tasks.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="max-w-4xl mx-auto py-24 px-6">
+
+        <h2 class="text-4xl font-bold text-center mb-10">
+            Contact
+        </h2>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-10 text-center">
+
+            <p class="text-slate-300 mb-2">
+                📧 john.doe@email.com
+            </p>
+
+            <p class="text-slate-300 mb-2">
+                💻 github.com/johndoe
+            </p>
+
+            <p class="text-slate-300">
+                💼 linkedin.com/in/johndoe
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer class="border-t border-slate-800 py-6 text-center text-slate-500">
+        © 2026 John Doe. All rights reserved.
+    </footer>
+
+</body>
+</html>

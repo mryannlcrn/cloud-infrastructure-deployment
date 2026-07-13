@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: cloud-project
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: cloud-project
+
+  template:
+    metadata:
+      labels:
+        app: cloud-project
+
+    spec:
+      containers:
+        - name: cloud-project
+          image: cloud-infrastructure:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 80
